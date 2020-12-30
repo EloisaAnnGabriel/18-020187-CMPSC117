@@ -1,0 +1,245 @@
+@import url(https//db.onlinewebfonts.com/c/7ca06963c2e0a99b0a44cad7b4f84ba6?family=Euclid+Flex); 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: 'EuclidFlex', sans-serif;
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+p {
+	color: black;
+    font-size: 2.5rem;
+    font-family: 'Ubuntu',sans-serif;
+	margin-top: 5px;
+	line-height: 3rem;
+	font-weight: 500;
+	letter-spacing: .05rem;
+}
+
+.section-title {
+    font-family: 'Ubuntu', sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	color: black;
+	margin-bottom: 10px;
+	letter-spacing: .2rem;
+	text-align: center;
+}
+.section-title span {
+	color: RGB(2, 191, 254);
+}
+
+.cta {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid yellow;
+	font-size: 2rem;
+	text-transform: capitalize;
+	letter-spacing: .1rem;
+    margin-top: 30px;
+    margin-left: 390px;
+}
+
+.brand img{
+    height: 12vh;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#header {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+#header .header {
+	min-height: 10vh;
+	background-color: rgba(31, 30, 30, 0.24);
+	transition: .3s ease background-color;
+}
+#header .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1300px;
+	padding: 0 10px;
+}
+#header .nav-list ul {
+	list-style: none;
+	position: absolute;
+	background-color: rgb(31, 30, 30);
+	width: 100vw;
+	height: 100vh;
+	left: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	overflow-x: hidden;
+
+}
+#header .nav-list ul a {
+    font-size: 2.5rem;
+	font-weight: 500;
+	letter-spacing: .2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+	color: black;
+	padding: 20px;
+	display: block;
+}
+#hero {
+	background-image: url(Bgg4.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+}
+#hero::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: .2;
+	z-index: -1;
+}
+#hero .hero {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+#hero h1 {
+	display: block;
+	width: fit-content;
+    font-size: 4rem;
+    font-weight: 300;
+	position: relative;
+    color:white;
+    margin-left: 275px;
+}
+#hero h2 {
+	display: block;
+	width: fit-content;
+    font-size: 8rem;
+	position: relative;
+    color: yellow;
+    margin-left: 250px;
+}
+#hero h3 {
+	display: block;
+	width: fit-content;
+    font-size: 4rem;
+    font-weight: 300;
+	position: relative;
+    color: white;
+    margin-left: 400px;
+}
+
+#projects .projects {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#projects .projects-header h1 {
+	margin-bottom: 5px;
+}
+#projects .all-projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#projects .project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	padding: 5px;
+	overflow: hidden;
+}
+#projects .project-info {
+	padding: 30px;
+	flex-basis: 50%;
+	margin: 10px;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: none;
+	color: black;
+}
+#projects .project-info h2 {
+	font-size: 4rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+#projects .project-info p {
+    color:black;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: justify;
+}
+#projects .project-img {
+	flex-basis: 50%;
+    height: 500px;
+    width: 960px;
+	overflow: hidden;
+	position: relative;
+    border-radius: 20px;
+}
+
+@media only screen and (min-width: 1200px) {
+	#header .hamburger {
+		display: none;
+	}
+	#header .nav-list ul {
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li {
+		display: inline-block;
+	}
+	#header .nav-list ul li a {
+		font-size: 1.8rem;
+	}
+	#header .nav-list ul a:after {
+		display: none;
+	}
+}
