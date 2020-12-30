@@ -1,0 +1,379 @@
+@import url(https//db.onlinewebfonts.com/c/7ca06963c2e0a99b0a44cad7b4f84ba6?family=Euclid+Flex); 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: 'EuclidFlex', sans-serif;
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+p {
+	color: black;
+    font-size: 2.5rem;
+    font-family: 'EuclidFlex', sans-serif;
+	margin-top: 5px;
+	line-height: 3rem;
+	font-weight: 500;
+	letter-spacing: .05rem;
+}
+
+.section-title {
+    font-family: 'EuclidFlex', sans-serif;
+	font-size: 5rem;
+	font-weight: 500;
+	color: black;
+	margin-bottom: 10px;
+	letter-spacing: .2rem;
+}
+.section-title span {
+	color: RGB(2, 191, 254);
+}
+
+
+.cta {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid yellow;
+	font-size: 2rem;
+	text-transform: capitalize;
+	letter-spacing: .1rem;
+    margin-top: 30px;
+    margin-left: 390px;
+}
+
+.brand img{
+    height: 12vh;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#header {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+#header .header {
+	min-height: 10vh;
+	background-color: rgba(31, 30, 30, 0.24);
+	transition: .3s ease background-color;
+}
+#header .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1300px;
+	padding: 0 10px;
+}
+#header .nav-list ul {
+	list-style: none;
+	position: absolute;
+	background-color: rgb(31, 30, 30);
+	width: 100vw;
+	height: 100vh;
+	left: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	overflow-x: hidden;
+
+}
+#header .nav-list ul a {
+    font-size: 2.5rem;
+	font-weight: 500;
+	letter-spacing: .2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+	color: white;
+	padding: 20px;
+	display: block;
+}
+#hero {
+	background-image: url(sunset.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+}
+#hero1 {
+	background-color: black;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+}
+#hero::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: .2;
+	z-index: -1;
+}
+#hero .hero {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+#hero h1 {
+	display: block;
+	width: fit-content;
+    font-size: 10rem;
+    font-weight: 300;
+	position: relative;
+    color:white;
+}
+#hero h1 span{
+    color: yellow;
+}
+#hero h2 {
+	display: block;
+	width: fit-content;
+    font-size: 8rem;
+	position: relative;
+    color: yellow;
+    margin-left: 250px;
+}
+#hero h3 {
+	display: block;
+	width: fit-content;
+    font-size: 4rem;
+    font-weight: 300;
+	position: relative;
+    color: white;
+    margin-left: 400px;
+}
+
+#hero1 h1 {
+	display: block;
+	width: fit-content;
+    font-size: 10rem;
+    font-weight: 300;
+	position: relative;
+    color:white;
+    margin-left: 250px;
+    margin-bottom: 50px;
+}
+#hero1 h1 span{
+    color: yellow;
+}
+#hero1 h2 {
+	display: block;
+	width: fit-content;
+    font-size: 2rem;
+    font-weight: 300;
+	position: relative;
+    color:white;
+    margin-bottom: 50px;
+}
+#hero1 h3 {
+	display: block;
+	width: fit-content;
+    font-size: 4rem;
+    font-weight: 300;
+	position: relative;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#services .services {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+    padding: 100px 0;
+}
+#services .service-top {
+	max-width: 500px;
+	margin: 0 auto;
+}
+#services .service-bottom {
+	display: flex;
+	align-items: right;
+	justify-content: right;
+	flex-flow: row wrap;
+    margin-top: 50px;
+}
+#services .service-item {
+    position: relative;
+    max-width: 450px;
+	margin: 10px;
+	margin-bottom: 100px;
+	margin-left: 150px;
+    padding: 0;
+    display: flex;
+}
+
+#services .service-item1 {
+    position: relative;
+    max-width: 600px;
+	margin: 10px;
+    margin-left: 0px;
+    margin-right: 100px;
+    padding: 0;
+    display: flex;
+}
+
+#services .service-item2 {
+    position: relative;
+    max-width: 600px;
+	margin: 10px;
+	margin-left: 150px;
+    padding: 0;
+    display: flex;
+}
+
+#services .service-item3 {
+    position: relative;
+    max-width: 450px;
+	margin: 10px;
+	margin-bottom: 100px;
+	margin-left: 0px;
+    padding: 0;
+    display: flex;
+}
+
+#services .service-item4 {
+    position: relative;
+    max-width: 450px;
+	margin: 10px;
+	margin-bottom: 100px;
+	margin-left: 150px;
+    padding: 0;
+    display: flex;
+}
+
+#services .service-item5 {
+    position: relative;
+    max-width: 600px;
+	margin: 10px;
+	margin-left: 0px;
+    padding: 0;
+    display: flex;
+}
+
+#services .service-item .imgBx{
+   max-width: 450px;
+   flex: 0px;
+}
+
+#services .service-item .imgBx img{
+    max-width: 100%;
+	max-height: 100%;
+}
+
+#services .service-item .content{
+    margin-left: 10px;
+}
+
+#services .service-item1 h2 {
+	font-size: 4rem;
+	font-weight: 400;
+	color: black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+	text-align: left;
+	text-transform: capitalize;
+}
+#services .service-item1 p {
+	color: black;
+	margin-left: 50px;
+	margin-bottom: 200px;
+	font-size: 2rem;
+	font-weight: 300;
+	text-align: left;
+	text-align: justify;
+}
+
+#services .service-item2 h2 {
+	font-size: 4rem;
+	font-weight: 400;
+	color: black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: left;
+	text-transform: capitalize;
+}
+#services .service-item2 p {
+	color: black;
+	margin-right: 50px;
+	margin-bottom: 200px;
+	text-align: left;
+	text-align: justify;
+	font-weight: 300;
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+#services .service-item5 h2 {
+	font-size: 4rem;
+	font-weight: 400;
+	color: black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+	text-align: left;
+	text-transform: capitalize;
+}
+#services .service-item5 p {
+	color: black;
+	margin-left: 50px;
+	font-size: 2rem;
+	font-weight: 300;
+	text-align: left;
+	text-align: justify;
+}
+
+@media only screen and (min-width: 1200px) {
+	#header .hamburger {
+		display: none;
+	}
+	#header .nav-list ul {
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li {
+		display: inline-block;
+	}
+	#header .nav-list ul li a {
+		font-size: 1.8rem;
+	}
+	#header .nav-list ul a:after {
+		display: none;
+	}
+}
