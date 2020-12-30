@@ -1,5 +1,5 @@
 <?php
-include_once("travel.html");
+include_once("index.html");
 
 
 ?>
